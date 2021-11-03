@@ -4,10 +4,12 @@ import com.openclassrooms.magicgithub.api.FakeApiServiceGenerator;
 import com.openclassrooms.magicgithub.di.Injection;
 import com.openclassrooms.magicgithub.model.User;
 import com.openclassrooms.magicgithub.repository.UserRepository;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,14 +25,14 @@ import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInA
  */
 @RunWith(JUnit4.class)
 public class UserRepositoryTest {
-    
+
     private UserRepository userRepository;
-    
+
     @Before
     public void setup() {
         userRepository = Injection.createUserRepository();
     }
-    
+
     @Test
     public void getUsersWithSuccess() {
         List<User> usersActual = userRepository.getUsers();

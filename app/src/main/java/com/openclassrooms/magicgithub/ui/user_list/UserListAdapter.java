@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.openclassrooms.magicgithub.R;
+import com.openclassrooms.magicgithub.api.ApiService;
 import com.openclassrooms.magicgithub.model.User;
 import com.openclassrooms.magicgithub.utils.UserDiffCallback;
 import java.util.ArrayList;
